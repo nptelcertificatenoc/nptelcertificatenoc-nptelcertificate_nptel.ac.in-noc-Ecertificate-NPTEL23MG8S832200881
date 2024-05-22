@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download PDF</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .download-btn {
+        background-color: #49a2dd;
+        color: white(250, 246, 246, 0);
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    @media screen and (max-width: 768px) {
+        .container {
+            padding: 10px;
+        }
+        .download-btn {
+            padding: 8px 16px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .download-btn {
+            padding: 6px 12px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Download PDF</h1>
+    <div class="button-container">
+        <button class="download-btn" id="downloadBtn">Course Certificate</button>
+       
+
+    </div>
+</div>
+
+<script>
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        const pdfUrl = 'Introduction On Intellectual Property To Engineers And Technologists.pdf'; // Replace with actual PDF URL
+        window.open(pdfUrl, '_blank');
+    });
+</script>
+</body>
+</html>
